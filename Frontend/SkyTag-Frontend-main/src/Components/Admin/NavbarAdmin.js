@@ -64,7 +64,7 @@ const NavbarAdmin = () => {
               className="logo d-flex align-items-center scrollto me-auto me-lg-0"
               style={{ textDecoration: "none" }}
             >
-              <h1>Suitcase Admin</h1>
+              <h1>SkyTag Admin</h1>
               <img src={suitlogo} alt="logo" />
             </Link>
 
@@ -90,15 +90,15 @@ const NavbarAdmin = () => {
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <Link className="nav-link scrollto" to="/AdminHome">
+                  <Link className="nav-link scrollto" to="#">
                     <span>Flight</span>{" "}
                   </Link>
                   <ul>
                     <li>
-                      <Link className="nav-link scrollto" to="/addFlight">Chart a Flight</Link>
+                      <Link className="nav-link scrollto" to="#">Chart a Flight</Link>
                     </li>
                     <li>
-                      <Link className="nav-link scrollto" to="/viewFlight">Flight Schedules</Link>
+                      <Link className="nav-link scrollto" to="#">Flight Schedules</Link>
                     </li>
               
                   </ul>
@@ -109,10 +109,10 @@ const NavbarAdmin = () => {
                   </Link>
                   <ul>
                     <li>
-                      <Link className="nav-link scrollto" to="/viewPassengers">Passenger</Link>
+                      <Link className="nav-link scrollto" to="#">Passenger</Link>
                     </li>
                     <li>
-                      <Link className="nav-link scrollto" to="/FlyersBooked">Flyers Booked</Link>
+                      <Link className="nav-link scrollto" to="#">Flyers Booked</Link>
                     </li>
               
                   </ul>
@@ -120,7 +120,7 @@ const NavbarAdmin = () => {
                 
                 
                 <li>
-                  <Link className="nav-link scrollto" to="/viewStaffAdmin">
+                  <Link className="nav-link scrollto" to="#">
                     Staff
                   </Link>
                 </li>

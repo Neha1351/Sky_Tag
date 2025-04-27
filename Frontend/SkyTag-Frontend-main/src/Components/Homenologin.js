@@ -14,7 +14,7 @@ const Homenologin = () => {
           data-aos="zoom-out"
         >
           <h2>
-            Welcome to <span>Suitcase Pro</span>
+            Welcome to <span>SkyTags</span>
           </h2>
           <p>Pack your dreams - Adventure awaits - Explore the world</p>
           <div className="d-flex">
@@ -60,7 +60,7 @@ const Homenologin = () => {
                   </div>
                   <h4>
                     <Link
-                      to="/Login/AirportAuthority"
+                      to="#"
                       className="stretched-link homepg-card"
                     >
                       Airport Authority
@@ -87,7 +87,7 @@ const Homenologin = () => {
                   </div>
                   <h4>
                     <Link
-                      to="/Login/Staff"
+                      to="#"
                       className="stretched-link homepg-card"
                     >
                       Cargo

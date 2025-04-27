@@ -11,7 +11,7 @@ const AdminHome = () => {
           <Link to="/AdminHome" class="hero-logo" data-aos="zoom-in">
             <img src={adminlogo} alt="" />
           </Link>
-          <h1 data-aos="zoom-in">Welcome To Suitcase Pro Administration</h1>
+          <h1 data-aos="zoom-in">Welcome To SkyTag Administration</h1>
           <h2 data-aos="fade-up">
             We are team of talented designers making websites with Bootstrap
           </h2>

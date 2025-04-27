@@ -37,7 +37,7 @@ const Navbarnolog = () => {
             className="logo d-flex align-items-center scrollto me-auto me-lg-0"
             style={{textDecoration:"none"}}
           >
-            <h1>Suitcase Pro</h1>
+            <h1>SkyTag</h1>
             <img src={suitlogo} alt="logo" />
           </Link>
 
@@ -49,7 +49,7 @@ const Navbarnolog = () => {
                 </Link>
               </li>
               <li>
-                <Link className="nav-link scrollto" to="/about">
+                <Link className="nav-link scrollto" to="#">
                   About Us
                 </Link>
               </li>

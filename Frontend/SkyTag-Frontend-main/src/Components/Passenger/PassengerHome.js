@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import axiosInstance from "../baseurl";
-import FlightsCardList from "./BookFlight/FlightsCardList";
+
 
 const PassengerHome = () => {
   return (
@@ -16,12 +16,12 @@ const PassengerHome = () => {
             data-aos="zoom-out"
           >
             <h2>
-              Welcome to <span>Suitcase Pro</span>
+              Welcome to <span>SkyTag</span>
             </h2>
             <p>Pack your dreams - Adventure awaits - Explore the world</p>
             <div className="d-flex">
               <Link
-                to="/BookFlight"
+                to="#"
                 className="btn-get-started scrollto"
               >
                 Flyer Booking
@@ -30,11 +30,7 @@ const PassengerHome = () => {
           </div>
         </section>
 
-        <main id="main">
-          <section id="featured-services" className="featured-services">
-           <FlightsCardList/>
-          </section>
-        </main>
+        
       </div>
     </div>
   );

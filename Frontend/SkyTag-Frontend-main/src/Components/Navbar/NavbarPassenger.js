@@ -1,11 +1,31 @@
 import React from "react";
 import "../../assets/css/navbarnolog.css";
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import suitlogo from "../../assets/img/luggageicon.png";
+import axiosInstance from "../baseurl";
 
 const NavbarPassenger = () => {
-  const navigate = useNavigate();
+  const deletefn = () => {
+    let x = prompt("Are you sure you want to delete? (Yes/No) ");
+    if (x.toLowerCase() == "yes") {
+      axiosInstance
+        .post(`/deletepassenger/${localStorage.getItem("passlogid")}`)
+        .then((res) => {
+          console.log(res);
+          alert("Deleted your profile");
+          localStorage.clear();
+          window.location.reload(false);
+
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      console.log("did not delete");
+    }
+  };
+
   const [colorChange, setColorchange] = useState("");
   const changeNavbarColor = () => {
     if (window.scrollY >= 100) {
@@ -15,6 +35,7 @@ const NavbarPassenger = () => {
     }
   };
   window.addEventListener("scroll", changeNavbarColor);
+
   const mobNav = (e) => {
     console.log("clicked");
     e.preventDefault();
@@ -55,66 +76,20 @@ const NavbarPassenger = () => {
       >
         <div className="container-fluid d-flex align-items-center justify-content-between">
           <Link
-            to="/AirportHome"
-            className="logo d-flex align-items-center scrollto me-auto me-lg-0"
-            style={{ textDecoration: "none" }}
+            to="/PassengerHome"
+            className="logo d-flex align-items-center nav-link scrollto me-auto me-lg-0"
           >
-            <h1>Suitcase Pro</h1>
+            <h1>SkyTag</h1>
             <img src={suitlogo} alt="logo" />
           </Link>
 
-          <nav id="navbar" className="navbar">
-            <ul>
-              <li>
-                <Link className="nav-link scrollto" to="/AirportHome">
-                  Home
-                </Link>
-              </li>
-              <li className="dropdown">
-                <Link className="nav-link scrollto" to="/AirportHome">
-                  <span>Staff</span>{" "}
-                </Link>
-                <ul>
-                  <li>
-                    <Link className="nav-link scrollto" to="/addStaff">
-                      Staff +
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="nav-link scrollto" to="/viewstaff">
-                      View Staff
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link className="nav-link scrollto" to="/ViewFlyers">
-                  Flyers
-                </Link>
-              </li>
-              <li>
-                <Link className="nav-link scrollto" to="/AirportFlights">
-                  Flights
-                </Link>
-              </li>
-              <li>
-                <Link className="nav-link scrollto" to="/about">
-                  About
-                </Link>
-              </li>
-            </ul>
-            <i
-              className="bi bi-list mobile-nav-toggle d-none"
-              onClick={mobNav}
-            ></i>
-          </nav>
+
 
           <Link
             className="btn-getstarted scrollto"
             onClick={() => {
               localStorage.clear();
               alert("Logged out");
-              navigate("/home");
               window.location.reload(false);
             }}
           >
