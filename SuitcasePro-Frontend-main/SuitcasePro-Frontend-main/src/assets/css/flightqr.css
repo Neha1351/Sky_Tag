@@ -1,0 +1,32 @@
+
+.container-qr{
+    
+    height:100vh;
+}
+
+.card-qr {
+    background-color: #ff02022e;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #eee
+}
+
+.inner-card-qr {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.heart {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E42729;
+    border-radius: 50%;
+    background-color: #ff02022e
+}
+

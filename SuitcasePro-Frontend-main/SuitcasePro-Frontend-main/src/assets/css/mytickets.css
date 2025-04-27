@@ -1,0 +1,48 @@
+.container-ticket .card-ticket {
+  max-width: 300px;
+  height: 325px;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+.container-ticket .card-ticket:hover {
+  height: 550px;
+}
+
+.container-ticket .card-ticket .imgcontainer-ticket {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  top: -50px;
+  left: 10px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container-ticket .card-ticket .imgcontainer-ticket img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.container-ticket .card-ticket .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+.container-ticket .card-ticket:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+  .container-ticket .card-ticket .imgcontainer-ticket {
+    left: -2px;
+  }
+}

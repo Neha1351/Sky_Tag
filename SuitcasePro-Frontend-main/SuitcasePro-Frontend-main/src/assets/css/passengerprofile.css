@@ -1,0 +1,129 @@
+
+.section-profile {
+    padding: 100px 0;
+    position: relative;
+}
+.gray-bg {
+    background-color: #f5f5f5;
+}
+img {
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+/* About Me 
+---------------------*/
+.about-text-profile h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+@media (max-width: 767px) {
+  .about-text-profile h3 {
+    font-size: 35px;
+  }
+}
+.about-text-profile h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .about-text-profile h6 {
+    font-size: 18px;
+  }
+}
+.about-text-profile p {
+  font-size: 18px;
+  max-width: 450px;
+
+
+}
+
+
+.about-list-profile {
+  padding-top: 10px;
+}
+.about-list-profile .media {
+    display: flex;
+  padding: 5px 0;
+}
+.about-list-profile label {
+  color: #20247b;
+  font-weight: 600;
+  width: 88px;
+  margin: 0;
+  position: relative;
+}
+.about-list-profile label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 11px;
+  width: 1px;
+  height: 12px;
+  background: #20247b;
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  margin: auto;
+  opacity: 0.5;
+}
+.about-list-profile p {
+  margin: 0;
+  font-size: 15px;
+  
+}
+
+@media (max-width: 991px) {
+  .about-avatar-profile {
+    margin-top: 30px;
+  }
+}
+
+
+mark {
+    background-image: linear-gradient(rgba(252, 83, 86, 0.6), rgba(252, 83, 86, 0.6));
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    background-color: transparent;
+    padding: 0;
+    color: currentColor;
+}
+.theme-color {
+    color: #fc5356;
+}
+.dark-color {
+    color: #20247b;
+}
+
+
+
+/* edit profile */
+
+
+.form-control-editProfile:focus {
+  box-shadow: none;
+  border-color: #BA68C8
+}
+
+.profile-button-editProfile {
+  background: rgb(99, 39, 120);
+  box-shadow: none;
+  border: none
+}
+
+
+
+
+
+.labels-editProfile {
+  font-size: 15px
+}
+
+
